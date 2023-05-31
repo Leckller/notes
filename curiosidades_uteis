@@ -1,0 +1,2 @@
+Dentro do Css podemos especificar algum elemento para estilizar pelo o ATRIBUTO que possui, por exemplo, seguindo essa lógicam podemos especificar todas as âncoras que possuirem o atributo "target" (atributo que inforam ao html que essa âncora redireciona o cliente para outra aba do seu navegador). Fica da seguinte forma: img[target].
+ainda não testei se é possível especificar por um valor dentro do atributo, mas acredito que haja uma forma de fazer isso.
