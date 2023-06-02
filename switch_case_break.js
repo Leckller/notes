@@ -1,4 +1,4 @@
-        // switch, case, break //
+// switch, case, break //
 
 // funcionam com a mesma ideia do if e else, mas diferente.
 
@@ -6,20 +6,20 @@
 // coloque dois pontos após o valor dado ao case! e então coloque o que acontecerá para quando resultar naquele valor.
 const fruta = 'melao';
 let mensagem = '';
-switch(fruta){
+switch (fruta) {
     case 'cenoura':
-    mensagem = 'oi, Cueio. voce quer uma cenoura? tá saindo por 3 conto o kg'
-    break;
+        mensagem = 'oi, Cueio. voce quer uma cenoura? tá saindo por 3 conto o kg'
+        break;
     case 'limao':
     case 'goiaba':
-    mensagem = 'mamao e goiaba tá saindo 3 conto o kg'
-    break;
+        mensagem = 'mamao e goiaba tá saindo 3 conto o kg'
+        break;
     case 'mamao':
-    mensagem = '2,50 a unidade'
+        mensagem = '2,50 a unidade'
     case 'melao':
-    mensagem = '3 conto a unidade'
-    //nesse caso o melao não envia o mesmo valor do mamao porque a mensagem vem antes de melao. após colocar uma mensagem embaixo de melao, ele então dá um resultado.
-    break;
+        mensagem = '3 conto a unidade'
+        //nesse caso o melao não envia o mesmo valor do mamao porque a mensagem vem antes de melao. após colocar uma mensagem embaixo de melao, ele então dá um resultado.
+        break;
 }
 console.log(mensagem)
 
@@ -42,8 +42,8 @@ for (let index = 0; index < numbers.length; index++) {
     }
     // Preciso saber quantos valores ímpares o vetor tem, e caso nao tenha nenhum imprimir um mensagem.
     const calculoImpares = numbers[index] % 2
-    if(calculoImpares != 0){
-    impares.push(numbers[index])
+    if (calculoImpares != 0) {
+        impares.push(numbers[index])
     }
 }
 console.log(`A soma destes números é ${soma}`)
@@ -55,3 +55,13 @@ else if (mediaAritimetica < 20) {
 }
 console.log(`${maiorNumero} é o maior número do vetor`)
 console.log(`${impares.length} é a quantidade de números ímpares `)
+
+console.log(`ex-----------------------------------------------------`)
+// desafio fatorial //
+
+let numeroFatorial = 10
+let calculoFat = numeroFatorial
+for (let fatindex = numeroFatorial - 1; fatindex < numeroFatorial && fatindex > 1; fatindex--) {
+calculoFat = calculoFat * fatindex
+console.log(calculoFat)
+}
