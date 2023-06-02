@@ -62,6 +62,30 @@ console.log(`ex-----------------------------------------------------`)
 let numeroFatorial = 10
 let calculoFat = numeroFatorial
 for (let fatindex = numeroFatorial - 1; fatindex < numeroFatorial && fatindex > 1; fatindex--) {
-calculoFat = calculoFat * fatindex
-console.log(calculoFat)
+    calculoFat = calculoFat * fatindex
+    console.log(calculoFat)
 }
+console.log(`ex-----------------------------------------------------`)
+// invertendo frase //
+console.log('ex-1')
+let word = 'tryber';
+let invertendo = []
+for (invert = word.length - 1; invert < word.length && invert >= 0; invert--) {
+    invertendo.push(word[invert])
+}
+console.log(word)
+console.log(invertendo.join(''))
+
+// Fazendo de um jeito mais simples.
+console.log('ex-2')
+const separandoSplit = word.split('')
+const invertendoReverse = separandoSplit.reverse()
+const juntandoJoin = invertendoReverse.join('')
+console.log(juntandoJoin)
+
+// Ou tudo de uma vez
+console.log('ex-3')
+const tudoMisturado = word.split('').reverse().join('')
+console.log(tudoMisturado)
+
+console.log(`ex-----------------------------------------------------`)
