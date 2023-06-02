@@ -89,3 +89,46 @@ const tudoMisturado = word.split('').reverse().join('')
 console.log(tudoMisturado)
 
 console.log(`ex-----------------------------------------------------`)
+
+// Quadrado de Asteristicos //
+
+let numeroQuadrado = 8
+if (numeroQuadrado > 1) {
+    for (let indexQuadrado = numeroQuadrado; indexQuadrado <= numeroQuadrado && indexQuadrado > 0; indexQuadrado--) {
+        let stringQ = []
+        for(indexColunaQuadrada = numeroQuadrado; indexColunaQuadrada <= numeroQuadrado && indexColunaQuadrada > 0; indexColunaQuadrada--){
+            stringQ.push('*')
+        }
+        console.log(stringQ.join(''))
+    }
+}
+console.log(`ex-----------------------------------------------------`)
+
+// Piramide de Asteristicos //
+let piramide = []
+let numeroPiramide = 15
+if(numeroPiramide > 2){
+    for(let indexPiramide = numeroPiramide; indexPiramide <= numeroPiramide && indexPiramide > 0; indexPiramide--){
+        piramide.push('*')
+        console.log(piramide.join(''))
+    }
+}
+console.log(`ex-----------------------------------------------------`)
+
+// Piramide de Asteristicos invertida //
+// Nesse método utilizei do unshift para adicionar um elemento no incio do array.
+
+let numeroPiramideInvertida = numeroPiramide
+let piramideInvertida = ['*']
+if(numeroPiramideInvertida > 2){
+    for(let indexPiramideI = numeroPiramideInvertida - 1; indexPiramideI <= numeroPiramideInvertida && indexPiramideI > 0; indexPiramideI--){
+        piramideInvertida.unshift(' ')
+    }
+    console.log(piramideInvertida.join(''))
+
+    for(let piramide2 = numeroPiramideInvertida - 2;piramide2 < numeroPiramideInvertida && piramide2 >= 0; piramide2--){
+        piramideInvertida.splice(piramide2, 1, '*')
+        console.log(piramideInvertida.join(''))
+    }
+}
+console.log(`ex-----------------------------------------------------`)
