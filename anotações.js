@@ -1,3 +1,6 @@
+function espace () {
+    return console.log(''),console.log('-x'.repeat(30)),console.log('')
+}
 // Vou anotar algumas propriedades, valores e atributos do javascript
 
 // Hoje eu aprendi os métodos "reverse", "join", "split" e "splice"
@@ -48,9 +51,7 @@ console.log(inverteSlice)
 // dentro do parênteses colocamos, PRIMEIRO o index inicial, e SEGUNDO o index final que será cortado e os demais à frente do mesmo também serão.
 // Importante destacar que é possível utilizar valores negativos, fazendo com que a ordem seja invertida, mas isso apenas para para localizar, logo a ordem em que será apresentado será a mesma. Com isso vale deixar o alerta de que para todo index temos DUAS formas de encontrar o mesmo, por exemplo o valor "0" nesse caso é o A que também pode ser identificado como -4, logo se colocarmos o valor 0 como inicial e o valor -4 como final, o array será apresentado vazio.
 
-console.log('-x'.repeat(30))
-console.log('')
-
+espace()
 // Temos algumas propriedades para retirar e colocar itens dentro dos arrays, diferente do splice que podemos escolher, esses são padronizados.
 
 let exemploArraysXablau = ['Ruy', 'Nascimento']
@@ -67,11 +68,37 @@ console.log(exemploArraysXablau)
 // Como no exemplo a cima, as propriedades push e unshift, respectivamente, adicionam um item ao final do array e a outra no inicio do array.
 // As outras duas propriedades, pop e shift, respectivamente retiram o ultimo item do array e a outra retira o primeiro item do array.
 
-console.log('')
-console.log('-x'.repeat(30))
-console.log('')
+espace()
 
 let confereElementos = ['Gusttavo','Ruy', 'Nascimento','Ferreira']
 console.log(confereElementos.includes('Nascimento'))
 
 // Como apresentado a cima, a propriedade includes, verifica se o elemento escolhido está dentro do array, caso o array possua aquele item, ele retorna "true", caso contrário retorna "false".
+
+espace()
+
+// temos as funçoes "Math" que trazem algumas propriedades da matematica e funções que nos possibilitam fazer algumas coisinhas legais, como por exemplo o Math.random que pega um numero aleatorio, o Math.ceil que arredonta um número para cima, o Math.SQRT que pega a raiz do número.
+
+let numeroRandom = Math.random() * 30
+console.log(numeroRandom)
+
+// como pode se ver no console ele não traz um numero inteiro, e sim uma dizima enorme, para corrigir isso podemos utilizar 3 funções Math: Math.ceil, Math.round e Math.floor; Respectivamente, retorna um valor arredondado para cima, retorna um valor arredondado de acordo com qual número está mais proximo, retorna um valor arredondado para baixo.
+
+numeroRandom = Math.round(Math.random() * 30)
+console.log(numeroRandom)
+
+// Pronto agora fica um numero inteiro bacanudo.
+
+espace()
+
+// Vou deixar aqui as anotaçoes do que eu aprendi e entendi sobre DOM
+
+// Bom p encurtar logo, basicamente DOM é uma forma de carregar o javascript junto com o documento html.
+
+// Da p alterar os elementos do documento HTML do site utilizando o javascript!
+// Utilizando a tag document no js da p ver todos os elementos escritos em html. E especificando um pouco mais com a ajuda de funções como "getElementById", "getelementsbyClassName", que respectivamente pegam um elemento por id e class, e utilizando as propriedades "innerText" e "innerHTML", que respectivamente selecionam o conteúdo !ignorando as tags escritas no texto como a <strong> e a outra pega o conteúdo inteiro incluindo as tags escritas.
+// utilizando Tudo isso da para alterar o conteúdo inteiro de algum elemento dentro do HTML utilizando o JavaScript.
+
+// A tag getElementById pega apenas UM elemento, logo é possível utilizar o innerText direto. Já o getElementsByClassName pega todos os elementos que possuem a class escolhida, e retorna com uma lista parecida com um array/vetor, logo é necessário especificar qual o index da lista a ser alterado ou visualizado no console, a parte bacana é que da p usar laço de repetição para facilitar nossa vida na hora de trocar vários elementos de uma class especifica. Da mesma forma que o getElementsByClassName, o getElementsByTagName também retorna uma lista (mesmo que tenha apenas um elemento dentro dessa lista), a única diferença é que ele pega os elementos por tag HTML.
+
+//

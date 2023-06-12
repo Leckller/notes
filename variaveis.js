@@ -22,3 +22,6 @@ console.log(variavelSemValor)
 
 // Temos 3 tipos de formas de declarar uma váriavel, com as tags "const" (para variaveis de valor fixo, não há como trocar o valor dessa variavel), "let"(diferente do const, essa variavel pode alterar o seu valor no decorrer do código) e "var" (que no geral funciona como as duas, porém ela pode ser localizada fora dos escopos para verificar o resultado, já a const e let só podem ser acessadas dentro do escopo)
 // É possível dar um console em mais de uma variavel utilizando uma virgula entre elas.
+
+
+

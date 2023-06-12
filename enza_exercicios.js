@@ -84,8 +84,11 @@ const menu = {
         }
     ],
 }
-
-
+function espacamento (){
+    console.log("")
+console.log('-x'.repeat(40))
+console.log("")
+}
 function readMenu(entrada, _tipo) {
     const lanche = []
     const preco = []
@@ -127,11 +130,8 @@ function readMenu(entrada, _tipo) {
     }
 
 }
-//readMenu(menu, 'drinks')
-console.log("")
-console.log('-x'.repeat(40))
-console.log("")
 
+espacamento()
 
 function readNameObject(_escolha) {
     for (let NOI = 0; NOI < menu.sandwiches.length; NOI++) {
@@ -156,10 +156,7 @@ function readNameObject(_escolha) {
     }
 }
 
-//console.log(readNameObject('Big Mac'))
-console.log("")
-console.log('-x'.repeat(40))
-console.log("")
+espacamento()
 
 const opcoesCompraveis = (dindin) => {
     const compraveis = []
@@ -186,7 +183,7 @@ const opcoesCompraveis = (dindin) => {
     return compraveis
 }
 
-//console.log(opcoesCompraveis(30))
+espacamento()
 
 const readingredientes = (ingredienteX) => {
     const opcoesComIngredienteX = []
@@ -211,6 +208,7 @@ const readingredientes = (ingredienteX) => {
     return opcoesComIngredienteX
 }
 console.log(readingredientes('bebida láctea sabor baunilha'))
+espacamento()
 /*
 Exercícios:
 1. Crie uma função que imprima o nome e o valor de todos os lanches disponíveis;
