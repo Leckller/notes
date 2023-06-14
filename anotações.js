@@ -91,7 +91,7 @@ console.log(numeroRandom)
 
 espace()
 
-// Vou deixar aqui as anotaçoes do que eu aprendi e entendi sobre DOM
+// Métodos de consulta DOM!!!
 
 // Bom p encurtar logo, basicamente DOM é uma forma de carregar o javascript junto com o documento html.
 
@@ -101,4 +101,40 @@ espace()
 
 // A tag getElementById pega apenas UM elemento, logo é possível utilizar o innerText direto. Já o getElementsByClassName pega todos os elementos que possuem a class escolhida, e retorna com uma lista parecida com um array/vetor, logo é necessário especificar qual o index da lista a ser alterado ou visualizado no console, a parte bacana é que da p usar laço de repetição para facilitar nossa vida na hora de trocar vários elementos de uma class especifica. Da mesma forma que o getElementsByClassName, o getElementsByTagName também retorna uma lista (mesmo que tenha apenas um elemento dentro dessa lista), a única diferença é que ele pega os elementos por tag HTML.
 
-//
+// Temos as tags query (querySelector() e querySelectorAll), que funcionam como seletores de CSS, podendo especificar exatamente onde iremos pegar tal elemento, seguindo a lógica de mãe filho neto etc... A tag querySelector pega o primeiro elemento que é encontrado de acordo com o parâmetro dado, já o querySelectorAll faz uma NodeList com todos os elementos encontrados com aquele parâmetro dado. Vale ressaltar que uma NodeList é parecida mas não é uma matriz, apesar de podermos utilizar a propriedade length, não conseguimos utilizar as propriedades pop(), push(), unshift() e shift().
+
+// Temos a propriedade "parentNode" que nos diz qual são os "pais" da tag escolhida na função anterior, podemos concatenar essa propriedade para saber quem é o pai do pai. Vale ressaltar que essa propriedade serve apenas pare leitura.
+
+// Existem mais propriedades que tem a mesma ideia de ler os descendentes das tags, dando a possibilidade de caminhar entre elas. São elas as:
+
+/*
+
+parentElement: Retorna o elemento-pai. Nesse caso, se o nó-pai não for um elemento HTML, essa propriedade retornará null.
+
+childNodes: Retorna um NodeList com todos os nós filhos.
+
+children: Retorna um HTMLCollection com todos os elementos filhos.
+
+firstElementChild: Retorna o primeiro elemento filho.
+
+lastElementChild: Retorna o último elemento filho.
+
+nextElementSibling: Retorna o próximo elemento.
+
+previousElementSibling: Retorna o elemento anterior.
+
+*/
+
+// firstChild e lastChild and firstElementChild e lastElementChild, são muito parecidos, com a diferença de que os primeiros acessam a primeira coisa que encontrar à frente do elemento pai, ou seja, isso inclui um espaço em branco. Já os segundos ignoram os espaços em branco e acessam o primeiro ELEMENTO que encontrar. 
+
+// Para criar os elementos HTML pelo javascript utilizamos a função "createElement" e dentro do parametro colocamos a tag HTML que será criada. Após criar um elemento devemos envialo para o html, utilizando a fução "appendChild" que cria um filho a partir de alguma tag antes especificada, e dentro do parametro colocamos o item que será enviado para o site.  
+
+// Do mesmo jeito que o innerHTML retorna as tags tbm, com ele é possivel enviar tags quando for passarmos um valor para algum texto no html.
+
+// Para alterar a estilização de algum elemento basta utilizar a propriedade style após especificar o elemento
+
+// Para criarmos um elemento HTML sem precisarmos escrever a tag após um innerHTML, podemos utilziar o createElement('tag') que irá criar um elemento, e para enviarmos para o HTML utilizamos o comando appendChild("elementoQueIráSerAdicionado") após o elemento pai, por exemplo:
+const elementoPai = 'document.querySelector("h1")'
+// elementoPai.appendChild("elementoQueIráSerAdicionado");
+
+// Para adicionar classes a um elemento podemos utilizar as propriedades className e classList com a propriedade add... respectivamente, ela sobrescreve o valor da classe de alguma tag, já o segundo ACRESCENTA uma nova classe.
