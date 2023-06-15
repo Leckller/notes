@@ -138,3 +138,15 @@ const elementoPai = 'document.querySelector("h1")'
 // elementoPai.appendChild("elementoQueIráSerAdicionado");
 
 // Para adicionar classes a um elemento podemos utilizar as propriedades className e classList com a propriedade add... respectivamente, ela sobrescreve o valor da classe de alguma tag, já o segundo ACRESCENTA uma nova classe.
+
+// Podemos inserir um atributo a um elemento utilizando o "setAttribute('atributo', valor do atributo)"
+
+// Também da p inserir um "id" com valor "nome do id".
+
+// EVENTOS NO JAVASCRIPT FINALMENTE TAMO TENDO
+
+// Para começar temos um objeto de browser chamado window (janela) que pode ter como evento o "onload" que pode ter como valor uma função ou uma linha de código, para então executar aquele valor sempre que a página for carregada. Vale acrescentar que comandos que forem escritos dpois desse código fora de uma lista será executado antes do carregamento do site, isso pode ser útil em alguns casos. 
+
+// Para códigos diretos em HTML, o que não será muito comum, mas para um botao podemos colocar a propriedade "onclick" que irá adicionar um evento a partir daquele click. Essa propriedade pode receber como valor uma função, que a propriedade onclick irá executar toda a linha de código escrita dentro daquela função.
+
+// 
