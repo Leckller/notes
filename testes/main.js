@@ -9,28 +9,34 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1.1. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.'
-function adicionaClasse(){
-  const elemento = firstLi.className = 'tech'
-}
-function retiraClasse(){
-  const elemento = firstLi.className = ''
-}
 firstLi.className = ''
-firstLi.addEventListener('mouseover', adicionaClasse)
-firstLi.addEventListener('mouseleave', retiraClasse)
+firstLi.addEventListener('mouseover', () => {firstLi.className = 'tech'});
+firstLi.addEventListener('mouseleave', () => {firstLi.classList.remove('tech')});
+secondLi.addEventListener('mouseover', () => {secondLi.className = 'tech'});
+secondLi.addEventListener('mouseleave', () => {secondLi.classList.remove('tech')});
+thirdLi.addEventListener('mouseover', () => {thirdLi.className = 'tech'});
+thirdLi.addEventListener('mouseleave', () => {thirdLi.classList.remove('tech')});
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'.
 
+input.addEventListener('keyup', pegaTextoEnviaTexto)
+function pegaTextoEnviaTexto () {
+  const texto = input.value
+  document.querySelector('.tech').innerText = texto
+}
+
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy',
 // redirecione para alguma página.
+myWebpage.addEventListener('dblclick', () => {window.open('https://youtu.be/32pHo_yc3Gg')})
 // 4.1. Que tal redirecionar para seu portfólio? Dica: Lembre-se dos métodos `window.location.replace` e `window.open`.
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo.
-
+myWebpage.addEventListener('mouseover', () => {myWebpage.style.color = 'red'})
+myWebpage.addEventListener('mouseleave', () => {myWebpage.style.color= 'white'})
 // Segue abaixo um exemplo de uso do event.target.
 
 const resetText = (event) => {

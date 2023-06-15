@@ -66,6 +66,5 @@ body {
   }
   
   .tech {
-    transition-duration: 10000000ms;
     transform: translateY(-20px);
   }
