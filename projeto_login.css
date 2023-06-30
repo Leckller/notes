@@ -60,4 +60,5 @@ main #formLogin p{
   font-size: 30px;
   text-align: center;
   font-variant: small-caps;
+  justify-content:space;
 }

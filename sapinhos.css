@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: aquamarine;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: 'Inconsolata', monospace; ;
+}
+
+img {
+  width: 100px;
+}
+
+#containerCentral {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: rgb(60, 180, 140);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+  border-radius: 100%;
+  margin: 10px;
+  border: solid black 2px;
+  box-shadow: 3px 3px 3px rgb(50, 141, 111);
+}
+
+main {
+  display: flex;
+  margin: 25px;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main div img {
+  width: 300px; 
+  border: solid black 2px;
+  box-shadow: 3px 8px 3px mediumaquamarine;
+}
+
+main div {
+  display: flex;
+  width: 100%;
+}
+
+main div p {
+  border-left: solid black 1px;
+  margin-left: 30px;
+  padding: 20px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Inconsolata', monospace;;
+}
+
+#leftSec {
+  width: 50%;
+  display: flex;
+  margin-top: 50px;
+  border-right: solid 1px black;
+}
+
+#rightSec {
+  width: 50%;
+  margin-left: 35px;
+  display: flex;
+  margin-top: 50px;
+}
+
+#secP {
+  display: flex;
+  text-align: center;
+}
+
+#secP img {
+  margin: 10px;
+  border: solid black 2px;
+  box-shadow: 3px 8px 3px mediumaquamarine;
+}
+
+#secP p {
+  color: black;
+  font-size: 30px;
+}
