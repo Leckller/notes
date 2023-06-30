@@ -26,6 +26,8 @@ header {
   height: 8%;
   background-color: #21334b;
   align-items: center;
+  font-variant: small-caps;
+  margin: 0;
 }
 
 header nav {
@@ -73,29 +75,104 @@ main {
   align-items: center;
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 320px;
 }
 
 #divImg img {
-  width: 100%;
-  object-fit: cover;
+  width: 1920px;
 }
 
 #quemSomos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+#divpQuemSomos {
+  width: 1200px;
 }
 
 #quemSomos h2 {
-    text-align: center;
-    border-bottom: solid white 1px;
-    padding: 10px;
-    margin: 10px
+  text-align: center;
+  border-bottom: solid white 1px;
+  padding-bottom:17px;
+  margin: 10px;
+  font-size: 40px;
+  font-variant: small-caps;
 }
 
 #quemSomos p {
+  text-align: center;
   flex-grow: 1;
-  padding-left: 30px;
+}
+
+#cont-equipe {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#equipe h2 {
+  border-bottom: solid white 1px;
+  padding-bottom: 20px;
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+#equipe-img {
+  width: auto;
+  margin: 30px;
+}
+
+#equipe-img img {
+  width: 550px;
+  margin: 30px;
+}
+#columnMainFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+footer div {
+  display: flex;
+}
+
+footer div:nth-child(2) {
+  width: 60%;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+  margin: 15px;
+  justify-content: center;
+}
+
+#contIcons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  background-color: black;
+}
+
+#contIcons div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#icons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
