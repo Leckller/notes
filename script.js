@@ -16,7 +16,7 @@ const promo = [
 
 button.addEventListener('click', () => {
   const name = document.querySelector('#name-id').value;
-  const number = document.querySelector('#number-id').value;
+  const number = Number(document.querySelector('#number-id').value);
 
   showPromo(name, number);
 });
@@ -24,7 +24,7 @@ button.addEventListener('click', () => {
 const testName = (_name, _number) => {
   if (typeof _name !== 'string' || _name === '') {
     throw new Error('Error! o texto inserido é inválido');
-  } else if (_number === '' || Number.isNaN(_number)) {
+  } else if (_number === '' || Number.isNaN(_number) || _number < 1 || _number > 10 || Number.isInteger(_number) === false) {
     throw new Error('Error! insira um texto numérico válido');
   }
 }
