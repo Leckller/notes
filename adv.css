@@ -86,18 +86,24 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+#marimba {
   width: 60%;
+  text-align: center;
 }
 
 #divpQuemSomos {
-  width: 1200px;
+  width: 100%;
+  text-align: center;
 }
 
 #quemSomos h2 {
-  text-align: center;
+  width: 100%;  
   border-bottom: solid white 1px;
   padding-bottom:17px;
-  margin: 10px;
   font-size: 40px;
   font-variant: small-caps;
 }
@@ -122,6 +128,8 @@ main {
 
 #equipe-img {
   width: auto;
+  display: flex;
+  flex-direction: row;
   margin: 30px;
 }
 
@@ -157,22 +165,19 @@ footer div:nth-child(2) {
 }
 
 #contIcons {
-  margin: 0;
-  padding: 0;
+  margin-top: 40px;
   display: flex;
   width: 100%;
-  background-color: black;
 }
 
-#contIcons div {
+#textIcons {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  align-items: center;
 }
 
 #icons {
   display: flex;
-  width: 100%;
-  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
 }

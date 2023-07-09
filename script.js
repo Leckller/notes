@@ -36,10 +36,12 @@ const showPromo = (aname, anumber) => {
     testName(aname, anumber);
     firstText.innerHTML = `Boas-vindas, ${aname}!`;
     secondText.innerHTML = `A promoção do dia é: ${productObject.product} no valor de R$ ${productObject.price}`;
-  }
-  catch (erro) {
+  } catch (erro) {
     return alert(erro.message);
-  }
+  } finally {
+    document.querySelector('#name-id').value = "";
+    document.querySelector('#number-id').value = "";
+    }
 }
 
 // Segunda parte
