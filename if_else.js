@@ -140,7 +140,7 @@ console.log(`ex-----------------------------------------------------`)
 
 // Piramide de Asteristicos //
 let piramide = []
-let numeroPiramide = 90
+let numeroPiramide = 30
 if(numeroPiramide > 2){
     for(let indexPiramide = numeroPiramide; indexPiramide <= numeroPiramide && indexPiramide > 0; indexPiramide--){
         piramide.push('*')
